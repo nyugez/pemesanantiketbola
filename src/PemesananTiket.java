@@ -5,10 +5,10 @@ import java.util.Scanner;
  * Kelas Tiket merepresentasikan sebuah tiket yang dipesan oleh pengguna.
  */
 class Tiket {
-    private String namaPemesan;
-    private String jenisTiket;
-    private int jumlahTiket;
-    private double hargaTiket;
+    private final String namaPemesan;
+    private final String jenisTiket;
+    private final int jumlahTiket;
+    private final double hargaTiket;
 
     /**
      * Konstruktor untuk membuat objek Tiket.
