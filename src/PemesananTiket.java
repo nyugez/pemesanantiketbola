@@ -26,42 +26,6 @@ class Tiket {
     }
 
     /**
-     * Mengembalikan nama pemesan tiket.
-     *
-     * @return Nama pemesan.
-     */
-    public String getNamaPemesan() {
-        return namaPemesan;
-    }
-
-    /**
-     * Mengembalikan jenis tiket yang dipesan.
-     *
-     * @return Jenis tiket (VIP atau Reguler).
-     */
-    public String getJenisTiket() {
-        return jenisTiket;
-    }
-
-    /**
-     * Mengembalikan jumlah tiket yang dipesan.
-     *
-     * @return Jumlah tiket.
-     */
-    public int getJumlahTiket() {
-        return jumlahTiket;
-    }
-
-    /**
-     * Mengembalikan harga per tiket.
-     *
-     * @return Harga tiket.
-     */
-    public double getHargaTiket() {
-        return hargaTiket;
-    }
-
-    /**
      * Menghitung total harga tiket berdasarkan jumlah tiket dan harga per tiket.
      *
      * @return Total harga tiket.
@@ -89,8 +53,8 @@ class Tiket {
  * Kelas PemesananTiket berfungsi sebagai sistem pemesanan tiket sepak bola.
  */
 public class PemesananTiket {
-    private static ArrayList<Tiket> daftarPemesanan = new ArrayList<>();
-    private static Scanner scanner = new Scanner(System.in);
+    private static final ArrayList<Tiket> daftarPemesanan = new ArrayList<>();
+    private static final Scanner scanner = new Scanner(System.in);
 
     /**
      * Menambah pesanan tiket baru berdasarkan input pengguna.
